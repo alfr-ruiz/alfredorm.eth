@@ -7,7 +7,7 @@ on:
     branches: [ "main" ]
 
 env:
-  DOCKER_IMAGE: gcr.io/${{ secrets.GCP_PROJECT_ID }}/next-supabase-stack
+  DOCKER_IMAGE: gcr.io/${GITHUB_SECRETS.GCP_PROJECT_ID}/next-supabase-stack
 
 jobs:
   build-and-test:
@@ -47,7 +47,7 @@ jobs:
         with:
           registry: gcr.io
           username: _json_key
-          password: ${{ secrets.GCP_SA_KEY }}
+          password: $GITHUB_SECRETS.GCP_SA_KEY
       
       - name: Build and Push Docker Image
         uses: docker/build-push-action@v5

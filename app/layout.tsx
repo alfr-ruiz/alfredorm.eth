@@ -1,3 +1,5 @@
+import React from 'react';
+
 export const metadata = {
   title: 'Next Supabase Stack',
   description: 'Modern full-stack application template',
