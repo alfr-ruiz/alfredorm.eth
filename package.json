@@ -1,0 +1,29 @@
+{
+  "name": "next-supabase-stack",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.0",
+    "next": "14.1.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "sass": "^1.69.0"
+  },
+  "devDependencies": {
+    "@types/react": "18.2.0",
+    "@types/node": "20.11.0",
+    "eslint": "8.56.0",
+    "eslint-config-next": "14.1.0",
+    "prettier": "3.2.4",
+    "typescript": "5.3.3",
+    "@typescript-eslint/eslint-plugin": "6.13.0",
+    "@typescript-eslint/parser": "6.13.0"
+  }
+}
